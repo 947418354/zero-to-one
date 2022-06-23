@@ -3,7 +3,6 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <button @click="handleClickAxios">测试axios请求</button>
   <router-view/>
 </template>
 
@@ -12,9 +11,6 @@ import aRequest from '@/request/modules/a'
 
 export default {
   methods: {
-    handleClickAxios() {
-      aRequest.request2()
-    }
   }
 }
 </script>
